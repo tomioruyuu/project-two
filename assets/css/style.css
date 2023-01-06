@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins";
+}
+
+/* ====common==== */
+.content {
+    width: 1170px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    height: 50px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    background-color: #171100;
+    border-radius: 999px;
+}
+
+/* ======HEADER====== */
+header {
+    height: 112vh;
+    background-color: #fffcf4;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+    position: relative;
+}
+.navigation {
+    display: flex;
+    position: absolute;
+    right: 215px;
+}
+
+nav .navigation a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+    padding-left: 42px;
+}
+
+nav .navigation li a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #171100;
+}
+
+nav .action-header {
+    min-width: 144px;
+}
+
+/* =======STATS HEADER======= */
+.stats {
+    margin-top: 64px;
+}
+
+.stats .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats .trademark {
+    position: relative;
+}
+
+.stats .trademark img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.stats .introduce {
+    width: 470px;
+    margin-top: 64px;
+}
+
+.stats .introduce h2 {
+    font-weight: 600;
+    font-size: 5.4rem;
+    line-height: 68px;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.stats .introduce .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.66667;
+    color: #5f5b53;
+    margin-top: 22px;
+}
+
+.stats .introduce .action {
+    margin-top: 38px;
+}
+
+.stats .action .btn {
+    min-width: 180px;
+    height: 64px;
+    line-height: 64px;
+    margin-right: 28px;
+    background: #ffb900;
+}
+
+.stats .action img {
+    background: #ffffff;
+    padding: 17px 18px;
+    margin-right: 14px;
+    border-radius: 50%;
+    transform: translateY(40%);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.stats .action span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.6667;
+    color: #171100;
+}
+
+.stats .info {
+    margin-top: 48px;
+}
+
+.stats .info .sub-title {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.6667;
+    color: #5f5b53;
+}
+
+.stats .info strong {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.stats .info span {
+    margin-right: 28px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.66667;
+    color: #5f5b53;
+}
+
+/* =======SUB-TRADEMARK======= */
+.stats .sub-strademark {
+    width: 270px;
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.stats .sub-strademark .courses {
+    display: flex;
+}
+
+.stats .courses img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 17px 18px;
+    background-color: violet;
+}
