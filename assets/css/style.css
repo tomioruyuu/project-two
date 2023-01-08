@@ -16,7 +16,9 @@ body {
 /* ====common==== */
 .content {
     width: 1170px;
-    margin: auto;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a {
@@ -38,22 +40,35 @@ a {
 }
 
 /* ======HEADER====== */
-header {
+
+main {
+    height: 10000px;
+}
+.hero {
     height: 112vh;
     background-color: #fffcf4;
+    display: flex;
+    padding-bottom: 65px;
+}
+header {
+    position: sticky;
+    background-color: #fffcf4;
+    padding-top: 26px;
+    top: -26px;
+    z-index: 1;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 36px;
     position: relative;
+    justify-content: space-between;
+    padding: 5px 0;
 }
 .navigation {
     display: flex;
     position: absolute;
-    right: 215px;
+    right: 190px;
 }
 
 nav .navigation a {
@@ -61,13 +76,26 @@ nav .navigation a {
     font-size: 1.6rem;
     line-height: 1.75;
     color: #5f5b53;
-    padding-left: 42px;
+    padding: 6px 24px;
+    position: relative;
 }
 
-nav .navigation li a:hover {
-    font-weight: 600;
-    text-decoration: underline;
+nav .navigation a:hover,
+nav li.active a {
+    text-shadow: 1px 0 0 currentColor;
     color: #171100;
+}
+
+nav li.active a::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 24px;
 }
 
 nav .action-header {
@@ -88,7 +116,7 @@ nav .action-header {
     position: relative;
 }
 
-.stats .trademark img {
+.stats .trademark > img {
     width: 470px;
     height: 685px;
     object-fit: cover;
@@ -102,11 +130,12 @@ nav .action-header {
 }
 
 .stats .introduce h2 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 5.4rem;
     line-height: 68px;
     letter-spacing: -0.02em;
     color: #171100;
+    font-family: "Sen", sans-serif;
 }
 
 .stats .introduce .desc {
@@ -178,8 +207,8 @@ nav .action-header {
 .stats .sub-strademark {
     width: 270px;
     position: absolute;
+    right: -100px;
     bottom: 48px;
-    right: 0;
     background: #ffffff;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
@@ -189,10 +218,52 @@ nav .action-header {
     display: flex;
 }
 
+.stats .courses .info-media {
+    display: flex;
+    align-items: center;
+}
+
 .stats .courses img {
     display: inline-block;
+    box-sizing: unset;
+    padding: 12px;
+    border-radius: 50%;
     width: 24px;
     height: 24px;
-    padding: 17px 18px;
-    background-color: violet;
+    margin-left: 24px;
+    margin-right: 16px;
+}
+
+.stats .courses .design {
+    background: #fff9e8;
+    margin-top: 24px;
+}
+
+.stats .courses .develope {
+    background: #fcefff;
+    margin-top: 22px;
+}
+
+.stats .courses .marketing {
+    background: #ebeaff;
+    margin-top: 22px;
+    margin-bottom: 28px;
+}
+
+.stats .courses .quantity {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.stats .courses .name-courses {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.6667;
+    color: #171100;
+}
+
+/* =======POPULAR COURSES======= */
+.popular {
+    box-sizing: unset;
 }
