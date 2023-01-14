@@ -52,7 +52,7 @@ a {
 
 /* ======HEADER====== */
 main {
-    height: 5000px;
+    overflow: hidden;
 }
 
 .header {
@@ -696,12 +696,127 @@ nav li.active a::after {
 }
 
 .blog .body-blog .bookmarks-blog {
-   position: absolute;
-   left: 570px;
-   bottom: 0;
-
+    position: absolute;
+    left: 570px;
+    bottom: 0;
 }
 
 .blog .body-blog .bookmarks-blog img {
     margin-left: 6px;
+}
+
+/* ======FOOTER====== */
+footer {
+    margin-top: 96px;
+    background: #2e2100;
+}
+
+footer .body-footer {
+    position: relative;
+    padding-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .body-footer::after {
+    content: "";
+    position: absolute;
+    bottom: -38px;
+    display: inline-block;
+    width: 1170px;
+    height: 1px;
+    background: #59554b;
+}
+
+footer .public .desc {
+    width: 267px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #bfbcb2;
+    margin-top: 18px;
+}
+
+footer .social {
+    margin-top: 18px;
+}
+
+footer .social img {
+    margin-right: 18px;
+}
+
+footer h2 {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+footer h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    display: inline-block;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+footer .content-footer ul {
+    padding-top: 43px;
+}
+
+footer .content-footer ul li {
+    margin-bottom: 12px;
+}
+
+footer .content-footer a {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #bfbcb2;
+}
+
+footer .content-footer a:hover {
+    text-decoration: underline;
+}
+
+footer .info-footer h2 {
+    font-weight: 600;
+    font-size: 1.6;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+footer .info-footer .p-info {
+    padding-top: 43px;
+}
+
+footer .p-info .desc {
+    max-width: 231px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #bfbcb2;
+    margin-bottom: 12px;
+}
+
+footer .p-info .desc span {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #ffffff;
+}
+
+footer .footer {
+    position: relative;
+    left: 406px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #807d74;
+    padding-top: 67px;
+    padding-bottom: 28px;
 }
