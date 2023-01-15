@@ -55,9 +55,6 @@ a {
 }
 
 /* ======HEADER====== */
-main {
-    overflow: hidden;
-}
 
 .header {
     background: #fffcf4;
@@ -718,19 +715,11 @@ footer {
 footer .body-footer {
     position: relative;
     padding-top: 96px;
+    padding-bottom: 38px;
     display: flex;
     justify-content: space-between;
 }
 
-footer .body-footer::after {
-    content: "";
-    position: absolute;
-    bottom: -38px;
-    display: inline-block;
-    width: 1170px;
-    height: 1px;
-    background: #59554b;
-}
 
 footer .public .desc {
     width: 267px;
@@ -815,12 +804,11 @@ footer .p-info .desc span {
 }
 
 footer .footer {
-    position: relative;
-    left: 406px;
+    text-align: center;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.85;
     color: #807d74;
-    padding-top: 67px;
-    padding-bottom: 28px;
+    padding: 28px 0;
+    border-top: 1px solid #59554b;
 }
