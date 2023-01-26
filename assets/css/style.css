@@ -245,6 +245,7 @@ nav li.active a::after {
     align-items: center;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .hero .watch-video .watch-icon {
@@ -294,8 +295,11 @@ nav li.active a::after {
 }
 
 .popular .heading {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 .popular .heading h2 {
     font-family: var(--heading-font);
@@ -316,38 +320,29 @@ nav li.active a::after {
 }
 
 .popular .direction-icon {
-    position: absolute;
-    right: 0;
-    top: 42px;
     display: flex;
     align-items: center;
+    gap: 18px;
 }
 
 .popular .direction-icon .item-icon {
+    height: 40px;
+    width: 40px;
+    color: #ffb900;
     border: 1px solid #ffb900;
     border-radius: 50%;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .popular .direction-icon .item-icon:hover {
-    /* background: #ffb900; */
-    opacity: 0.6;
+    color: #fff;
+    background: #ffb900;
+    cursor: pointer;
 }
 
-.popular .direction-icon img {
-    padding: 14px 17px;
-}
-
-.popular .direction-icon img:hover {
-    opacity: 0.6;
-}
-
-.popular .direction-icon a:last-child {
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin-left: 18px;
-}
 
 /* ======CARDS====== */
 .cards-popular {
@@ -432,9 +427,6 @@ nav li.active a::after {
     min-width: 118px;
 }
 
-/* .cards-popular .card-item .buy .btn:hover {
-    background: #ffb900;
-} */
 
 /* ======FEATURES-ONE====== */
 .feature-one {
