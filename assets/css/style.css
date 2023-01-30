@@ -4,7 +4,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -300,7 +301,6 @@ nav li.active a::after {
     justify-content: space-between;
 }
 
-
 .popular .heading h2 {
     font-family: var(--heading-font);
     font-weight: 700;
@@ -342,7 +342,6 @@ nav li.active a::after {
     background: #ffb900;
     cursor: pointer;
 }
-
 
 /* ======CARDS====== */
 .cards-popular {
@@ -426,7 +425,6 @@ nav li.active a::after {
 .cards-popular .card-item .buy .btn {
     min-width: 118px;
 }
-
 
 /* ======FEATURES-ONE====== */
 .feature-one {
@@ -665,11 +663,24 @@ nav li.active a::after {
 }
 
 .blog .cards-b-item .time {
+    position: relative;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.857;
     color: var(--main-color);
     margin-left: 4px;
+}
+
+.blog .cards-b-item .time::after {
+    position: absolute;
+    bottom: -12px;
+    left: -10px;
+    display: inline-block;
+    content: "";
+    width: 160px;
+    height: 1px;
+    background: #e2dfda;
+    border-radius: 0.5px;
 }
 
 .blog .cards-b-item .desc {
@@ -711,7 +722,6 @@ footer .body-footer {
     display: flex;
     justify-content: space-between;
 }
-
 
 footer .public .desc {
     width: 267px;
